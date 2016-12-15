@@ -40,7 +40,7 @@ in the patch.
     - `prostate cancer prediction`
         1. Vignette in writing; Julia is working on it with new funding support.
 
-1. Platform components up- and down-stream to methods packages
+1. Platform components that are up- and down-stream to methods packages
     - *Upstream* 
         1. Current model of exporting data from EHR, such as EPIC. Developer currently can request data from EPIC and they can run their model locally.
         1. *Good to have*: Tools to harvest EPIC for developers/analysts to do their projects. For example, take all the data related to the search criteria, and determine the treatments used, dates of visit or operation. Because currently data mangement people usually extract from the raw database and prepare data for developers, the methods packages need to articulate their requirements on input data. The data mangement people can know what needs to be extracted for specific analyses by reading the manuals of the methods package.
