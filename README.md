@@ -39,7 +39,13 @@ maintenance work and you get a pull request.  Run your tests and if they pass yo
 in the patch.
     - `prostate cancer prediction`
 
-1. 
+1. Platform components up- and down-stream to methods packages
+    - *Upstream* 
+        1. Current model of exporting data from EHR, such as EPIC. Developer currently can request data from EPIC and they can run their model locally.
+        1. *Good to have*: Tools to harvest EPIC for developers/analysts to do their projects. For example, take all the data related to the search criteria, and determine the treatments used, dates of visit or operation. Need to articulate these requirements in the methods package, so they can know what needs to be extracted for specific analyses.
+    - *Downstream*: 
+        1. Currently need to get data out of EPIC, put them on a separate server, run the code, get the results, and add a link in EPIC to these results. Also, in EPIC, we can document what decisions for patients are made based on the analyses. 
+        1. *Obstacles*: EPIC management do not want extraneous information, e.g., image and other things, they want to have a clean body of documents (?).
 
 
 1. Software capacity for large datasets and/or complex models (scalability)
@@ -49,6 +55,6 @@ in the patch.
        1. *High dimensionality of unknown parameters*. Possible solution: hybrid algorithm that run MCMC for a subset of the parameters and use fast estimates for others. For example, first run some fast manifold detection algorithm in high-dimensions, extract the manifold and model data as noisy observation near it; Reference [here](https://projecteuclid.org/download/pdfview_1/euclid.aos/1458245738).
 
 1. Other business:
-   1. Plan a session in ENAR or JSM meeting, so that the work built towards the talks can appear in a special issue in JASA or SIM.
+   1. Plan a session in ENAR or JSM meeting, so that the work built towards the talks can appear in a special issue in JASA or SIM. Also can encourage other researchers in this area to share, combine tools in a mutually beneficial way.
    1. Plan software deliverables for 2017 DC Advisory Board Meeting.
 
