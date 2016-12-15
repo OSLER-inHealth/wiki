@@ -38,11 +38,12 @@ users who are compromised by incompatbilities, sometimes one is motivated to car
 maintenance work and you get a pull request.  Run your tests and if they pass you can merge
 in the patch.
     - `prostate cancer prediction`
+        1. Vignette in writing; Julia is working on it with new funding support.
 
 1. Platform components up- and down-stream to methods packages
     - *Upstream* 
         1. Current model of exporting data from EHR, such as EPIC. Developer currently can request data from EPIC and they can run their model locally.
-        1. *Good to have*: Tools to harvest EPIC for developers/analysts to do their projects. For example, take all the data related to the search criteria, and determine the treatments used, dates of visit or operation. Need to articulate these requirements in the methods package, so they can know what needs to be extracted for specific analyses.
+        1. *Good to have*: Tools to harvest EPIC for developers/analysts to do their projects. For example, take all the data related to the search criteria, and determine the treatments used, dates of visit or operation. Because currently data mangement people usually connect the raw database to developers, the methods packages need to articulate the requirements on the input data for each methods package so they can know what needs to be extracted for specific analyses. 
     - *Downstream*: 
         1. Currently need to get data out of EPIC, put them on a separate server, run the code, get the results, and add a link in EPIC to these results. Also, in EPIC, we can document what decisions for patients are made based on the analyses. 
         1. *Obstacles*: EPIC management do not want extraneous information, e.g., image and other things, they want to have a clean body of documents (?).
