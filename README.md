@@ -39,8 +39,15 @@ in the patch.
 1. 
 
 
-1. Other:
+1. Software capacity for large datasets and/or complex models (scalability)
    - Three challenges to fast Bayesian computing: 
        1. *Large data volume*. Slows down conventional Bayesian posterior computing. Possible solution: approximate Markov chain transition kernel in place of exact ones (approximate MCMC that trades-off bias and computational speed), divide-and-conquer (split data into many small pieces, obtain posteriors for each subset of data or sub-posteriors, and then combine or find the "center" of all sub-posteriors). Examples are: [concensus MCMC](http://www.rob-mcculloch.org/some_papers_and_talks/papers/working/consensus-mc.pdf), [Weierstrass sampler](https://arxiv.org/abs/1312.4605) and finding the [Barycenter of subposteriors](https://arxiv.org/abs/1508.05880).
        1. *Monte Carlo errors that decays at the rate of square root of sample size*. (100 more parallel computers only 10 times more precise)
        1. *High dimensionality of unknown parameters*. Possible solution: hybrid algorithm that run MCMC for a subset of the parameters and use fast estimates for others. For example, first run some fast manifold detection algorithm in high-dimensions, extract the manifold and model data as noisy observation near it; Reference [here](https://projecteuclid.org/download/pdfview_1/euclid.aos/1458245738).
+
+1. Other business:
+   1. Plan a session in ENAR or JSM meeting, so that the work built towards the talks can appear in a special issue in JASA or SIM.
+   1. Plan software deliverables for 2017 DC Advisory Board Meeting.
+   1.
+   
+   > Release early and often - Vince
