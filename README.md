@@ -26,6 +26,9 @@ Compare to the situation with prostate model.
 
 ## December 1st, 2016
 
+> Release early and often - Vince
+
+
 1. Updates on packages: 
     - `baker`: 
          1. JAGS is not the only MCMC software that we will be using. Alternatives are [Stan](http://mc-stan.org), [INLA](https://pymc-devs.github.io/pymc3/index.html), [NIMBLE](https://bids.berkeley.edu/research/nimble-numerical-inference-hierarchical-models-using-bayesian-and-likelihood-estimation), [PyMC3 (python-based)](https://pymc-devs.github.io/pymc3/index.html). The methods packages that inHealth platform will host need to have multiple cleanly designed components including data cleaning/formatting, model specification, model fitting (including packages for Bayesian inferences), model checking, visualizations. Such component isolation reduces the burden for maintainence because developers can have changes to a component like JAGS, isolate the impacts, carry out compatibility changes in a systematic way, with regression testing to ensure that one has not broken something by fixing something else. The [`RUnit`](https://cran.r-project.org/web/packages/RUnit/index.html) package for unit testing is helpful for accomplishing the test discipline. We should have unit tests in each of the OSLER-inHealth methods packages.
@@ -48,4 +51,4 @@ in the patch.
 1. Other business:
    1. Plan a session in ENAR or JSM meeting, so that the work built towards the talks can appear in a special issue in JASA or SIM.
    1. Plan software deliverables for 2017 DC Advisory Board Meeting.
-   1.> Release early and often - Vince
+
