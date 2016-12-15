@@ -49,5 +49,4 @@ in the patch.
    1. Plan a session in ENAR or JSM meeting, so that the work built towards the talks can appear in a special issue in JASA or SIM.
    1. Plan software deliverables for 2017 DC Advisory Board Meeting.
    1.
-   
    > Release early and often - Vince
